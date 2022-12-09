@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author: Adrian Masiubi
+   Date: 11/27/22       
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+
+/* All Devices CSS Rulesets Start */
+@media only screen {
+  /* Page Background */
+  body {
+    background-image: url(jb_back3.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header Image */
+  header img#header {
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  /* Navigation Bar */
+  header {
+    text-align: center;
+  }
+
+  header nav > ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  header nav * {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav > ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Main Page */
+  article {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  aside h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  aside h2 {
+    font-size: 1em;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  address a {
+    text-decoration: none;
+    color: white;
+  }
+}
+/* All Devices CSS Rulesets End */
+
+/* Mobile Devices CSS Rulesets Start */
+@media only screen and (max-width: 480px) {
+  /* Navigation Bar */
+  header nav,
+  header img#header {
+    display: none;
+  }
+
+  header nav > ul {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  header span {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  header .topnav {
+    display: none;
+  }
+
+  header .topnav.visible {
+    display: block;
+  }
+
+  header nav .dropdown {
+    font-size: 0.75em;
+  }
+
+  /* Sides */
+  aside.right {
+    display: none;
+  }
+
+  aside address a {
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 2.5em;
+    padding: 0.5em;
+    border-radius: 5em;
+  }
+}
+/* Mobile Devices CSS Rulesets End */
+
+/* Desktop Devices CSS Rulesets Start */
+@media only screen and (min-width: 481px) {
+  /* Navigation Bar */
+  header span {
+    display: none;
+  }
+
+  header nav > ul {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* This Prevents the Entire Flexbox Container From Expanding When Hovering Over A Link */
+  header nav {
+    position: relative;
+  }
+
+  header nav .dropdown {
+    position: absolute;
+  }
+
+  header nav ul li ul.dropdown {
+    display: none;
+  }
+
+  header nav ul li:hover .dropdown {
+    display: block;
+  }
+
+  header nav > ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  header nav ul li:hover {
+    background-color: black;
+  }
+
+  header nav li a {
+    background-color: transparent;
+  }
+
+  /* Main Page */
+  .main {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  aside {
+    flex-basis: 25em;
+  }
+
+  .right {
+    order: 3;
+  }
+}
+/* Desktop Devices CSS Rulesets End */

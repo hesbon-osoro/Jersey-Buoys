@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+        New Perspectives on HTML5 and CSS3, 7th Edition
+        Tutorial 5
+        Case Problem 4
+        
+        Jersey Buoys home page
+        Author: Hesbon Osoro
+        Date: 12/9/22   
+
+        Filename: jb_home.html
+    -->
+
+    <title>Jersey Buoys Surfing School</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="jb_styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <span
+        ><a href="javascript:void(0);" onclick="openNav()"
+          ><img src="jb_navicon.png" id="navicon" /></a
+      ></span>
+      <img src="jb_image01.png" alt="A Surfer Surfing" id="header" />
+      <nav class="topnav" id="nav">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <li>
+            <a href="#">Classes</a>
+            <ul class="dropdown">
+              <a href="#"><li>Intro Surfing</li></a>
+              <a href="#"><li>Surfing I</li></a>
+              <a href="#"><li>Surfing II</li></a>
+              <a href="#"><li>Surfing III</li></a>
+              <a href="#"><li>Master Surfing</li></a>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Camps</a>
+            <ul class="dropdown">
+              <a href="#"><li>1-Day Grommets</li></a>
+              <a href="#"><li>3-Day Grommets</li></a>
+              <a href="#"><li>5-Day Grommets</li></a>
+              <a href="#"><li>Gurfer Weekend</li></a>
+              <a href="#"><li>Men's Retreat</li></a>
+              <a href="#"><li>Adult Excursions</li></a>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Store</a>
+            <ul class="dropdown">
+              <a href="#"><li>Gear</li></a>
+              <a href="#"><li>Quiver</li></a>
+              <a href="#"><li>Clothing</li></a>
+              <a href="#"><li>Shopping Cart</li></a>
+              <a href="#"><li>My Account</li></a>
+              <a href="#"><li>Tracking</li></a>
+            </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Staff</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <aside class="left">
+        <h1>Jersey Buoys</h1>
+        <address>
+          Tony Gallo
+          <br />
+          141 Hodad Drive
+          <br />
+          Ocean City, NJ 08226
+          <br />
+          <a href="tel:6095557873">(609) 555-7873</a>
+          <br />
+          <a href="mailto:gall@example.com">gall@example.com</a>
+        </address>
+      </aside>
+      <aside class="right">
+        <h1>Surfer Slang</h1>
+        <h2>Barney</h2>
+        <p>A new and inexperience surfer</p>
+        <h2>Boost</h2>
+        <p>To take off from a wave into an aerial</p>
+        <h2>Cutback</h2>
+        <p>To change direction when streaking ahead of the curl</p>
+        <h2>Gandolf</h2>
+        <p>An experienced wise older surfer</p>
+        <h2>Green Room</h2>
+        <p>The inside of a tube</p>
+        <h2>Grommet</h2>
+        <p>A very young surfer, a child</p>
+        <h2>Gurfer</h2>
+        <p>A girl surfer</p>
+        <h2>Hobble-Bobble</h2>
+        <p>An aerial launch while flapping your arms like a bird</p>
+        <h2>Quiver</h2>
+        <p>A collection of surfboards</p>
+      </aside>
+      <article>
+        <p>
+          Come enjoy the excitement of riding the waves along the Jersey Shore
+          with Jersey Buoys. Our nationally-accredited school brings its 22
+          years of experience in helping you become the surfer you've dreamed of
+          becoming.
+        </p>
+        <p>
+          Our classes are tailored to your needs. We provide instruction in
+          basic surfing techniques and advanced techniques from cutbacks to
+          boosts to hobble-bobbles. Choose a private or group lesson. Grommets
+          can participate in 1, 3, or 5 half-day courses. We also sponsor
+          surfing camps with catered meals and lodging.
+        </p>
+        <p>
+          Whether a Barney or a Gandolf, you are always safe in our waters. Our
+          experienced instructors are accredited by the National Instructors and
+          Surf Schools Association. They are fully Red Cross and First Aid
+          certified. In addition to being great teachers, every instructor has
+          gone through extensive lifeguard training.
+        </p>
+        <p>
+          The next big wave is approaching: Catch it with Jersey Buoys. Call to
+          set up an appointment, grab a board from the quiver and head to the
+          Green Room.
+        </p>
+      </article>
+    </div>
+    <script>
+      function openNav() {
+        var x = document.getElementById("nav");
+        if (x.className === "topnav") {
+          x.className += " visible";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
